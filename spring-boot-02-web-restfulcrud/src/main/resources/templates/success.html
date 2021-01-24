@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"> <!--thymeleaf的空间 -->
+<head>
+    <meta charset="UTF-8">
+    <title>success</title>
+</head>
+<body>
+    <h1>success</h1>
+    <div th:text="${hello}">加载未成功</div>
+    <hr/>
+    <h3 th:text="${user}" th:each="user:${users}"></h3>
+    <hr/>
+    <h3>
+        <span th:each="user:${users}">[[${user}]]</span>
+    </h3>
+    <hr/>
+</body>
+</html>
